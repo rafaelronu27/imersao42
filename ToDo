@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .mark{
+            display: inline-block;
+            background: white;
+            height: 10px;
+            width: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Afazeres</h1><br><br>
+        <div>
+            <div class="mark" id="item1" onclick="marcar()"></div> Item 1
+        </div>
+        <div>
+            <div class="mark" id="item2" onclick="marcar()"></div> Item 2
+        </div>
+        <div>
+            <div class="mark" id="item3" onclick="marcar()"></div> Item 3
+        </div>
+        <div>
+            <div class="mark" id="item4" onclick="marcar()"></div> Item 4
+        </div>
+
+        <script>
+            function marcar(){
+                var marc = window.document.getElementById('item1')
+                marc.style.background = 'black'
+            }
+        </script>
+        
+
+
+</body>
+</html>
