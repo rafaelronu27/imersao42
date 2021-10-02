@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
         .mark{
             display: inline-block;
             background: white;
@@ -20,26 +19,26 @@
 <body>
     <h1>Lista de Afazeres</h1><br><br>
         <div>
-            <div class="mark" id="item1" onclick="marcar()"></div> Item 1
+            <div class="mark" id="item1" onclick="marcar(this)"></div> Item 1
         </div>
         <div>
-            <div class="mark" id="item2" onclick="marcar()"></div> Item 2
+            <div class="mark" id="item2" onclick="document.getElementById('item2').style.background = 'black'"></div> Item 2
         </div>
         <div>
-            <div class="mark" id="item3" onclick="marcar()"></div> Item 3
+            <div class="mark" id="item3" onclick="document.getElementById('item3').style.background = 'black'"></div> Item 3
         </div>
         <div>
-            <div class="mark" id="item4" onclick="marcar()"></div> Item 4
+            <div class="mark" id="item4" onclick="document.getElementById('item4').style.background = 'black'"></div> Item 4
         </div>
 
         <script>
-            function marcar(){
-                var marc = window.document.getElementById('item1')
-                marc.style.background = 'black'
+            function marcar(this){
+                if (this.style.background = "black") {
+                    this.style.background = "white"
+                } else {
+                    this.style.background = "black"
+                }
             }
         </script>
-        
-
-
 </body>
 </html>
